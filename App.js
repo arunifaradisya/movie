@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { createAppContainer } from 'react-navigation';
-import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { createStackNavigator } from 'react-navigation-stack';
 
-import HomeScreen from './home';
-import AboutScreen from './about';
-import SettingsScreen from './settings';
+// import the login & tabs js file to app.js
+import LoginScreen from './login';
+import Tabs from './tabs';
 
+//t
+const stackNavigator = createStackNavigator({
+  Login: LoginScreen,
+  tabs: Tabs
+});
 
-const tabNavigator = createBottomTabNavigator({
-  // property & value
-    Home: HomeScreen,
-    About: AboutScreen,
-    Settings: SettingsScreen
-})
-
-// built a tab bar
-export default createAppContainer(tabNavigator)
+export default createAppContainer(stackNavigator)
