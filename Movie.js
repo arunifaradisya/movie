@@ -8,9 +8,20 @@ export default class Movie extends React.Component {
                 <View style={styles.box}>
 
                     <View style={styles.boxes}>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
+                        <Image style={styles.image} source={require('./assets/movie1.jpg')}/>
                         <Text style={styles.button}>Add To List</Text>
                     </View>
+
+                    {/* <View style={styles.boxes}>
+                        <Image style={styles.image} source={require('./assets/movie2.jpg')}/>
+                        <Text style={styles.button}>Add To List</Text>
+                    </View>
+
+                    <View style={styles.boxes}>
+                        <Image style={styles.image} source={require('./assets/movie3.jpg')}/>
+                        <Text style={styles.button}>Add To List</Text>
+                    </View> */}
+                    
                     
                 </View>
             </View>

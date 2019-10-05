@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, StyleSheet, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 
 import movieJSON from './movielist.json';
 import Movie from './Movie';
@@ -33,20 +35,18 @@ export default class ProfileScreen extends Component {
 
                     <View>
                         <Text style = {styles.headtitle2}>Your List.</Text>
+                        
                     </View>
                     <View style={styles.wrap}>
-                        <Image style={styles.image} title="djag" source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
-                        <Image style={styles.image} source={{ uri: this.props.moviePoster }}/>
+                        <Image style={styles.image} source={require('./assets/movie1.jpg')}/>
+                        <Image style={styles.image} source={require('./assets/movie2.jpg')}/>
+                        <Image style={styles.image} source={require('./assets/movie3.jpg')}/>
+                        <Image style={styles.image} source={require('./assets/movie4.jpg')}/>
+                        <Image style={styles.image} source={require('./assets/movie5.jpg')}/>
+                        <Image style={styles.image} source={require('./assets/movie6.jpg')}/>
+                        <Image style={styles.image} source={require('./assets/movie7.jpg')}/>
+                        <Image style={styles.image} source={require('./assets/movie8.jpg')}/>
+                        <Image style={styles.image} source={require('./assets/movie9.jpg')}/>
                     </View>
 
                 </ScrollView>
@@ -126,7 +126,7 @@ export default class ProfileScreen extends Component {
         width: 100,
         height: 130,
         marginVertical: 20,
-        borderRadius: 5,
+        borderRadius: 10,
         resizeMode: "cover",
         backgroundColor: "rgba(0,0,0,0.2)"
     }
